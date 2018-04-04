@@ -3,6 +3,6 @@
 
 use Example\Controller\HomeController;
 
-$app->any('/', HomeController::class . ':indexAction')
+$app->map(['POST', 'GET'], '/', HomeController::class . ':indexAction')
     ->setName('homepage')
 ;
