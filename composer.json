@@ -1,0 +1,40 @@
+{
+    "name": "candrianarijaona/slim-command-example",
+    "license": "MIT",
+    "type": "project",
+    "description": "Use case of the slim command",
+    "keywords": ["slim", "slim command", "slim console"],
+    "homepage": "https://github.com/candrianarijaona/slim-command",
+    "authors": [
+        {
+            "name": "Claude Samuelson Andrianarijaona",
+            "email": "samuelson.claude@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../slim-command",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "slim/slim": "^3",
+        "slim/twig-view": "^2.0",
+        "slim/flash": "^0.1.0",
+        "monolog/monolog": "^1.13",
+        "candrianarijaona/slim-command": "@dev",
+        "symfony/var-dumper": "^3"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Example\\": "app/"
+        }
+    }
+}
