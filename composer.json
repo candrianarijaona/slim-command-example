@@ -23,9 +23,6 @@
     ],
     "require": {
         "slim/slim": "^3",
-        "slim/twig-view": "^2.0",
-        "slim/flash": "^0.1.0",
-        "monolog/monolog": "^1.13",
         "candrianarijaona/slim-command": "@dev",
         "symfony/var-dumper": "^3"
     },

@@ -3,11 +3,11 @@
 
 require __DIR__ . '/../bootstrap.php';
 
-use Candrianarijaona\Command\RouteCommand;
+use Candrianarijaona\Command\Route\DebugCommand;
 use Symfony\Component\Console\Application;
 
 $application = new Application();
 
-$application->add(new RouteCommand($container->get('router')));
+$application->add(new DebugCommand($container->get('router')));
 
 $application->run();
